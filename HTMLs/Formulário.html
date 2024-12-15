@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <!-- Input: text, password, radio, submti, reset-->
+    <ul>
+        <li>Input</li>
+        <li>select</li>
+        <li>textarea</li>
+    </ul>
+
+<form action="">    
+    <label for="nome">Nome </label>
+    <input id="nome" name="nome" type="text"><br>
+    <label for="senha">Senha </label>
+    <input id="senha" name="senha" type="password"><br>
+
+    <label for="conectado">Manter conectado </label>
+    <input id="conectado" name="Conectado" type="checkbox" value="CONECTADO"><br>
+
+        <input type="radio" id="gerente" name="nivel">
+        <label for="gerente">Gerente</label>
+
+        <input type="radio" id="secretario" name="nivel">
+        <label for="secretario">Secretário</label>
+
+        <input type="radio" id="ouro" name="nivel">
+        <label for="ouro">Outro</label>
+
+        <br>
+
+        <label for="opcoes"> Opções</label>
+        <select id="opcoes" name=op>
+                      
+            <option value=""></option>    
+            <option value="Sistema">Sistema</option>
+            <option value="Webmail">Webmail</option>
+            <option value="Acadêmico">Acadêmico</option>
+        </select>
+            
+        <br>
+        <br>
+
+        <label for="mensagem">Mensagem: </label>
+        <textarea id="mensagem" cols="50" rows="5"></textarea>
+       
+
+    <hr>
+
+        <input type="submit" value="Submeter">
+        <input type="reset" value="Resetar">
+
+</form>
+
+
+
+</body>
+</html>

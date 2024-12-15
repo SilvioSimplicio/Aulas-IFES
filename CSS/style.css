@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0FF4C6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+    color: rgb(104, 98, 98);
+}

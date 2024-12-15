@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 2px solid black;
+    margin: 1em auto;
+    width: 700px;
+    padding: 10px;
+    
+}
+
+.topo {
+    height: 150px;
+    background-color: #f7f2e7;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.topo > a > img {
+    width: 300px;
+}
+
+.links {
+    height: 150px;
+    background-color: #e2cfa4;
+    padding-left: 25px;
+    padding-top: 25px;
+
+}
+
+ul {
+    list-style: none;
+    
+}
+
+.professor {
+    text-decoration: none;
+}
+
+.alunos {
+    text-decoration: none;
+}
+
+.pais {
+    text-decoration: none;
+}
+
+span {
+    color: #82704a;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.5s;
+    margin-left: 10px;
+
+}
+
+span:hover {
+    background-color: white;
+    color: black;
+    
+}
+
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-left: 25px;
+}
+
+p > a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+p > a:hover {
+    color:black;
+    font-weight: bold;
+
+}
+
+.base {
+    height: 100px;
+    background-color: #ffffff;
+    text-align: center;
+    
+}
+
+.base > a > img {
+    width: 200px;
+    
+}

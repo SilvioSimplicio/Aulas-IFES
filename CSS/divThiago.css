@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border-radius: 25px;
+    border: black;
+    padding: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#cabecalho {
+    height: 150px;
+    background-color: orange;
+    align-content: center;
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+#menu {
+    height: 500px;
+    width: 200px;
+    background-color: orangered;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+    
+}
+
+#principal {
+    height: 500px;
+    width: 700px;
+    background-color: yellow;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-block-end: 10px;
+
+}
+
+#lateral {
+    height: 500px;
+    width: 200px;
+    background-color: blue;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#rodape {
+    height: 50px;
+    background-color: pink;
+    clear: both;  
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+
+

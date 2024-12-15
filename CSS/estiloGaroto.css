@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+.logogaroto {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    padding-top: 30px;
+    background-color: #f80017;
+    
+}
+
+.header:before {
+    background-image: url(https://www.garoto.com.br/themes/custom/garoto/Content/img/bg/bg-roxo.png);
+    content: "";
+    display: block;
+    top: 0;
+    position: absolute;
+    height: 20px;
+    width: 100vw;
+    background-repeat: repeat;
+}
+
+.textoheader {
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #fecb00;
+    font-weight: 700;  
+    letter-spacing: -0.05em;
+    font-size: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+    transition: 0.5s;
+}
+
+.textoheader:hover {
+    color: #ffff;
+}
+
+.linkheader {
+    margin-left: 8px;
+    color:#f80017;
+    flex-wrap: wrap;
+    background-color: #fecb00;
+    border-radius: 50%;
+    border: 2px solid #fecb00;
+    transition: 0.5s;
+}
+
+.linkheader:hover {
+    color: white;
+    background-color: #f80017;
+    border: 2px solid #fecb00;
+}
+
+.imgmain {
+    background-color: #f38c01;
+    padding-left: 10%;
+    padding-right: 10%;    
+}
+
+.categoriasmain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f38c01;  
+}
+
+.quadradocategoriasmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1px;
+}
+    
+.imgcategorias {
+    height: 110px;
+    width: 218px;
+    transition: 0.5s;
+}
+
+.imgcategorias:hover {
+    border-radius: 25px;
+    border: 3px solid #f80017;
+    height: 130px;
+    width: 172px;
+}
+
+.filtro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color: #fecb00;
+}
+
+.textofiltro {
+    text-decoration: none;
+    color: #f13325;
+    font-weight: 700;  
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+.linksfiltro {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 200px;
+    padding-right: 200px;
+    align-items: center;
+    align-content: center;
+    justify-content:center;  
+    background-color: #fecb00; 
+}
+
+#iconesfiltro {
+    margin-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    align-items: center;
+    justify-content:center;
+    height: 30px;
+    width: 30px;
+    background-color: #f80017;
+    color: #fecb00;
+    transition: 0.5s;
+}
+
+#iconesfiltro:hover {
+    color: white;
+    border: 2px solid #fecb00;
+}
+
+.imgfiltro {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e8e4d4;  
+    transition: 0.5s;
+}
+
+.imgfiltro:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+    border: 3px solid #f80017;
+    margin: 10px;
+}
+
+.footer {
+    background-color: #75ba45;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linkfooter1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:start;
+    align-content: center;  
+    padding-top: 25px;
+    padding: 25px;
+   
+}
+
+.linkfooter1 > a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    
+    transition: 0.5s;
+}
+
+.linkfooter1 > a:hover {
+    color: #e2e4e6;
+}
+
+.meninogarotofooter {
+    padding-top: 25px;
+}
+
+hr {
+    border: 2px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footerfinal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+    background-color: #75ba45;
+}
+
+.footerfinal > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.footerfinal > a:before {
+   content: ' | ';
+   padding-right: 5px;
+   padding-left: 5px;
+}
+
+#textofooterfinal {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+}

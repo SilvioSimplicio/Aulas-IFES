@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(232, 245, 118);
+    padding: 100px;
+    
+    }
+
+.Meninos {
+    background-color: rgb(147, 149, 231);
+    width: 250px;
+    border: 2px solid black;
+}
+.Meninos:hover {
+    background-color: hsla(0, 0%, 100%, 0.973);
+}
+
+.Meninas {
+    background-color: blueviolet;
+    width: 250px;
+    border: 2px solid black;
+}
+.Meninas:hover {background-color: hsla(0, 0%, 100%, 0.973);
+}
+#redessociais {
+    text-align: center;
+}

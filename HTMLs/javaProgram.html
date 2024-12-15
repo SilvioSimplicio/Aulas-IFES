@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      
+      let pares = [4, 2, 8, 6, 10];
+      let impares = [9, 7, 5, 3, 1];
+      
+      pares.sort((a, b)=> a-b);
+      impares.sort((a, b)=> b-a);
+
+      let juntos = pares.concat(impares);
+
+      alert("Os númuros pares, em ordem crescente, são " + pares + "." );
+      alert("Os númuros ímpares, em ordem decrescente, são " + impares + "." );
+      
+      alert("Os númuros juntos são " + juntos + "." );
+
+  </script>
+</head>
+<body>
+</html>

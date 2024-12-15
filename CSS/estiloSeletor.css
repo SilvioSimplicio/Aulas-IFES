@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(145, 231, 203);
+}
+
+h1 {
+    background-color: rgb(8, 57, 253);
+    color: whitesmoke;
+}
+
+h1:hover {
+    background-color: black;
+}
+
+#rd:hover {
+    background-color: black;
+}
+
+#admin .disciplinas {
+    padding: 25px;
+    
+}
+
+.normal .disciplinas {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    }
+
+.internet {
+    border-radius: 20px;
+    border: 5px solid rgb(7, 7, 7);
+    background-color: rgb(10, 94, 94);
+}
+
+.logica {
+    background-color: blueviolet;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+.colaboracao {
+    background-color: rgb(43, 226, 52);
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+.redes {
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+#rd {
+       background-color: rgb(255, 72, 0);
+}
