@@ -1,0 +1,33 @@
+.header{
+    height: 70px;
+    background-color: #3e4095;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: #ffff;
+    font-size: 14px;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 700;
+}
+
+.img-logo{
+    width: 180px;
+}
+
+.img-login{
+    width: 30px;
+    border-radius: 50%;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: aqua;
+}
