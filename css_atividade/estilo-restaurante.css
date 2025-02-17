@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+header {
+    background-color: #fff462;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+.active-link {
+    text-decoration: none;
+    color: white;
+    background-color: #758a27;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header .links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    color: black;
+    transition: 0.2s;
+}
+
+header .links a:hover {
+    color: white;
+    background-color: black;
+}
+
+.img-header ion-icon {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+
+main {
+    background-color: #d1e489;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+main .img-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+main .img-main img {
+    width: 400px;
+    clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);      
+}
+
+main .conteudo {
+    padding: 25px;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.397);
+}
+
+.conteudo p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.conteudo a {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-cardapio {
+    width: 180px;
+}
+
+.conteudo a {
+    background-color: black;
+    color:white;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.conteudo a:hover {
+    color: black;
+    background-color: #fff462;
+    border: 1px solid black;
+        
+}
+
+.conteudo ion-icon {
+    padding-top: 2.5px;
+} 
