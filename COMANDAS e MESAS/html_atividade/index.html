@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesas e Conandas</title>
+    <title>Mesas e Comandas</title>
     <link rel="shortcut icon" href="../img_atividade/logo-mesaecomanda.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css_atividade/estilo-restaurante.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,42 +14,52 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="../img_atividade/logo-mesaecomanda.png" alt="Logo do Projeto"></a>
+            <a href="#"><img src="../img_atividade/logo-mesaecomanda.png" alt="Logo do Projeto"></a>
         </div>
         <nav class="links">
-            <a href="index.html">Cardápio</a>
+            <a href="index.html" class="active-link">Projeto</a>
             <a href="mesas.html">Mesas</a>
-            <a href="comandas.html" class="active-link">Comandas</a>
+            <a href="comandas.html">Comandas</a>
             <a href="about.html">Sobre nós</a>
             <a href="contato.html">Contato</a>
         </nav>
-        <div class="img-header">
+        <div class="icon-header">
             <a href=""><ion-icon name="log-in-outline"></ion-icon></a>
             <a href=""><ion-icon name="cart-outline"></ion-icon></a>
         </div>
     </header>
-    <main>
-        
+
+    <main>    
         <div class="img-main">
-            <img src="../img_atividade/marmita.jpg" alt="Modelo de Pratos Plant-based">
+            <img src="../img_atividade/marmita2.png" alt="Modelo de Pratos Plant-based">
         </div>
         
         <div class="conteudo">
             <h1>Comida saudável, gostosa e pronta em minutos.</h1> 
             <br>
             <p>Já pensou em ter um chefe cozinhando pra você o dia todo? 
-                É isso que a gente faz: criamos pratos plant-based deliciosos e nutritivos
-                e entreganos na porta de sua casa.</p>
+                É isso que a gente faz: criamos pratos plant-based deliciosos 
+                e nutritivos
+                e entregamos na porta de sua casa.</p>
             <br>
             <div class="btn-cardapio">
-                <a href="#">Ver cardápio <ion-icon name="chevron-forward-outline"></ion-icon></a>
-            </div>    
-            
-            
+                <a href="#">Ver cardápio ></a>
+            </div>               
         </div>
     </main>
 
+
+    <footer class="navbar fixed-bottom justify-content-center text-bg-dark">
+        <span class="text-white">
+           Site desenvolvido por <b>Silvio Simplicio</b>. <b>Muito Massa!</b>    
+        </span>
+    </footer>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -6,12 +6,13 @@
 }
 
 body {
-    background-color: black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 100vh;
     min-width: 100vw;
+    background-color: #d1e489;
+    
 }
 
 header {
@@ -51,15 +52,14 @@ header .links a:hover {
     background-color: black;
 }
 
-.img-header ion-icon {
+.icon-header ion-icon {
     font-size: 30px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
 }
 
 main {
-    background-color: #d1e489;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@ main .img-main {
 
 main .img-main img {
     width: 400px;
-    clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);      
+    clip-path: polygon(20% 0, 70% 0%, 100% 30%, 100% 70%, 81% 100%, 30% 100%, 3% 100%, 0 33%);
 }
 
 main .conteudo {
@@ -94,16 +94,8 @@ main .conteudo {
 
 .conteudo p {
     font-size: 18px;
-    font-weight: 700;
-}
-
-.conteudo a {
-    display: flex;
-    flex-direction: row;
-}
-
-.btn-cardapio {
-    width: 180px;
+    margin-bottom: 25px;    
+    
 }
 
 .conteudo a {
@@ -121,9 +113,62 @@ main .conteudo {
     color: black;
     background-color: #fff462;
     border: 1px solid black;
+    border-radius: 10px;
         
 }
 
-.conteudo ion-icon {
-    padding-top: 2.5px;
-} 
+@media screen and (max-width: 700px) {
+    .conteudo {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    main .img-main {
+        display: none;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+               
+    }
+
+    .icon-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 5px;
+    }
+
+    .icon-header ion-icon {
+        display: flex;
+        flex-direction: row;  
+        font-size: 20px; 
+        padding: 0;           
+    }
+
+    header .links a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+}
