@@ -92,7 +92,7 @@ main .conteudo {
     text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.397);
 }
 
-.conteudo p {
+script .conteudo p {
     font-size: 18px;
     margin-bottom: 25px;    
     
@@ -115,6 +115,11 @@ main .conteudo {
     border: 1px solid black;
     border-radius: 10px;
         
+}
+
+#btn1, #btn2{
+    background-color: black;
+    color: white;
 }
 
 @media screen and (max-width: 700px) {

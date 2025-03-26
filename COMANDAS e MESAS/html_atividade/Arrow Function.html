@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+    <link rel="stylesheet" href="styleArrowFunction.css">
+</head>
+<body>
+
+    <div class="conteudo">
+    <h2>Calculadora de Médias</h2>
+    <form onsubmit="processarFormulario(event)">
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1"><br>
+
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2"><br>
+
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3"><br><br>
+
+        <label for="tipo">Tipo de Média:</label>
+        <select id="tipo" required>
+            <option value="A">Aritmética</option>
+            <option value="P">Ponderada</option>
+            <option value="H">Harmônica</option>
+        </select><br><br>
+
+        <button type="submit">Calcular Média</button>
+    </form>
+    <br>
+    <h3>Resultado:</h3>
+    <p id="resultado"></p>
+    </div>
+    <script>     
+        function calcularMedia(n1, n2, n3, tipo) {
+            let resultado;
+
+            switch (tipo) {
+                case 'A':
+                    resultado = (n1 + n2 + n3) / 3;
+                    break;
+                case 'P':
+                    resultado = (n1 * 5 + n2 * 3 + n3 * 2) / (5 + 3 + 2);
+                    break;
+                case 'H':
+                    if (n1 > 0 && n2 > 0 && n3 > 0) {
+                        resultado = 3 / ((1 / n1) + (1 / n2) + (1 / n3));
+                    } else {
+                        resultado = "Notas devem ser maiores que zero para calcular a média harmônica.";
+                    }
+                    break;
+                default:
+                    resultado = "Tipo de média inválido.";
+            }
+
+            imprimirNoHTML(resultado.toFixed(2));
+        }
+
+        function imprimirNoHTML(mensagem) {
+            document.getElementById("resultado").innerText = "Sua nota é: " + mensagem;
+        }
+
+        function processarFormulario(event) {
+            event.preventDefault();
+
+            let nota1 = parseFloat(document.getElementById("nota1").value);
+            let nota2 = parseFloat(document.getElementById("nota2").value);
+            let nota3 = parseFloat(document.getElementById("nota3").value);
+            let tipoMedia = document.getElementById("tipo").value;
+
+            calcularMedia(nota1, nota2, nota3, tipoMedia);
+        }
+        </script>
+</body>
+</html>
