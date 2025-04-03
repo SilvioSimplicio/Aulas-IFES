@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://santateresa.ifes.edu.br/images/conteudo/not%C3%ADcias/2020/80_anos/10.jpg);
+    background-size: 100vw;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;      
+}
+
+.btn {
+    background-color: #17882c;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+p {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+span {
+    margin-top: 20px;
+    font-size: 20px;
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #17882c;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+span:hover {
+    box-shadow: 0 0 15px #76b729;
+    transform: scale(1.1);
+}
+
+img {
+    width: 50px;
+    border-radius: 3px;    
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    width: 440px;
+    height: 300px;
+    background-color: rgba(22, 248, 75, 0.7);
+    border-radius: 20px;
+}

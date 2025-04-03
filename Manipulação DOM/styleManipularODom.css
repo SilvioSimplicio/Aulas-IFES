@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: url(https://santateresa.ifes.edu.br/images/conteudo/not%C3%ADcias/2020/80_anos/10.jpg);
+    background-size: 100vw;
+}
+
+header, main, footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: greenyellow;
+    width: 700px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 20px;
+}

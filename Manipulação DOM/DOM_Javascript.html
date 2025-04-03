@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM com Javascript</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvSN2zan5dxrznDvy7hjVsS9mC0T4uOh7yw&s">
+    <link rel="stylesheet" href="styleDom_Java.css">
+</head>
+<body>
+
+    <button class="btn">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvSN2zan5dxrznDvy7hjVsS9mC0T4uOh7yw&s" alt="Logo IFES">
+        <p>Alunos IFES</p>
+    </button>
+  
+    <span>
+        Clique para inserir um novo aluno
+    </span>
+    
+    <br>
+
+    <div class="conteudo"></div>
+
+    <script>
+        const span = document.querySelector('span');
+        const conteudo = document.querySelector('.conteudo');
+        
+        span.addEventListener('click', criaAluno);
+
+        function criaAluno () {
+
+        const name = prompt('Digite o nome do aluno');
+        
+            if (name && name.trim() !== "") {
+                const aluno = document.createElement('p');
+                const no = document.createTextNode(`Aluno(a): ${name}`);
+                aluno.appendChild(no);
+                conteudo.appendChild(aluno);
+            }
+        else {
+                alert("Nome inválido! Tente novamente.");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

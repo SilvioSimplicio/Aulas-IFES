@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_DOM_Silvio</title>
+    <link rel="shortcut icon" href="//ava3.cefor.ifes.edu.br/pluginfile.php/1/theme_fordson/favicon/1743424320/favicon.ico"/>
+    <link rel="stylesheet" href="styleManipularODom.css">
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvSN2zan5dxrznDvy7hjVsS9mC0T4uOh7yw&s" alt="Logo IFES">
+    <header>
+        <nav id="header-nav" class="nav nav-list bg-color-dark">
+            <ul>
+                <li class="link link-nav">Curso de Javascript</li>
+                <li class="link link-nav">Módulos</li>
+                <li class="link link-nav">Links</li>
+        </nav>
+    </header>
+    <main>
+        <div class="container m-5 bg-color-dark">
+            Texto do Menu
+        </div>
+    </main>
+    <footer>
+        <nav class="nav nav-list nav-list-horizontal bg-color-dark">
+            <ul>
+                <li class="link link-nav">Desenvolvido por <span>Silvio</span></li>
+            </ul>
+        </nav>
+    </footer>
+
+<script>
+    //a) seleção do elemento cujo id é header-nav e troca de background
+    let elemento1 = document.getElementById("header-nav");
+    elemento1.style.backgroundColor = "yellow";
+    
+    
+    //b) seleciona elementos bg-color-dark e troca texto
+    let elemento2 = document.querySelectorAll('.bg-color-dark');
+    for (let i = 0; i < elemento2.length; i++) {
+        elemento2[i].innerHTML = "Inseri um novo texto manipulando o DOM_Silvio!";
+    }
+
+    /*c) O document.querySelectorAll('nav') seleciona todos os elementos <nav> presentes no documento.
+         O loop for percorre cada um desses <nav> e substitui completamente o seu conteúdo.
+         (innerHTML = "Novo texto";). 
+         Isso significa que todo o HTML interno das <nav> será perdido, incluindo <ul>, <li> ou outros elementos.
+         Ficaria assim:  
+         <nav> Novo texto </nav>
+         Isso remove completamente os menus de navegação, tornando-os apenas um texto simples, 
+         sem estrutura de listas (<ul>, <li>) e sem os estilos CSS associados às classes removidas
+
+    */
+    
+</script>
+
+</body>
+</html>
