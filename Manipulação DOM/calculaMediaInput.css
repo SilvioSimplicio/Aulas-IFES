@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: rgba(9, 9, 47, 0.927);
+    color: white;
+    text-align: center;
+}
+
+#botao {
+    font-size: 20px;
+}
