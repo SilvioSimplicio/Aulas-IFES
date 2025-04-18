@@ -10,13 +10,13 @@
 9 Calcular a média de uma lista de números: Crie uma função de seta que receba uma lista de números como parâmetro e retorne a média deles.
 10 Verificar se um número é primo: Crie uma função de seta que receba um número como parâmetro e retorne true se ele for primo e false caso contrário.*/
 
-const soma = (num1, num2) => num1 + num2;
+//const soma = (num1, num2) => num1 + num2;
 //console.log(soma(10,10));
 
-const subtracao = (num1, num2) => num1 - num2;
+//const subtracao = (num1, num2) => num1 - num2;
 //console.log(subtracao(10,5));
 
-const multiplicacao = (num1, num2) => num1 * num2;
+//const multiplicacao = (num1, num2) => num1 * num2;
 //console.log(multiplicacao(10,5));
 
 /*const divisao = (num1, num2) => {
@@ -28,33 +28,33 @@ const multiplicacao = (num1, num2) => num1 * num2;
 
 //A mesma divisão com operador ternário
 
-const divisao = (num1, num2) => (num1 === 0 && num2 === 0) ? 'Indefinição matemática 0/0.' : num1 / num2;
+//const divisao = (num1, num2) => (num1 === 0 && num2 === 0) ? 'Indefinição matemática 0/0.' : num1 / num2;
 //console.log(divisao(10,2));
 //console.log(divisao(0,0));
 
 //par ou ímpar (par true; ímpar false)
 
-const parOuImpar = (num1) => (num1%2 === 0) ? true:false;
+//const parOuImpar = (num1) => (num1%2 === 0) ? true:false;
 //console.log(parOuImpar(2));
 
- const positivoNegativoOuZero = (num1) => (num1>0) ? 'O número é positivo.' : (num1<0) ? 'O número é negativo.': 'O número é zero.';
+ //const positivoNegativoOuZero = (num1) => (num1>0) ? 'O número é positivo.' : (num1<0) ? 'O número é negativo.': 'O número é zero.';
  //console.log(positivoNegativoOuZero(0));
 
- const quadrado = (num1) => (num1*num1);
+ //const quadrado = (num1) => (num1*num1);
  //console.log(quadrado(3));
 
  //calcular fatorial
- const fatorial = (num) => (num < 0) ? 'Não existe fatoração de número negativo.':(num===0)?1: num*fatorial(num-1) 
+ //const fatorial = (num) => (num < 0) ? 'Não existe fatoração de número negativo.':(num===0)?1: num*fatorial(num-1) 
  //console.log(fatorial(2));
 
- //media em lista de números
+ /*media em lista de números
  const media = (lista) => {
     let soma = 0;
     for(let i=0; i<lista.length;i++){
         soma += lista[i];
     } 
-    //return soma/lista.length;
- }
+    return soma/lista.length;
+ }*/
 
 //verificar se um número é primo
 //Math.sqrt dá a raiz quadrada

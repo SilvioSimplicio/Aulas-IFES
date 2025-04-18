@@ -41,7 +41,7 @@ toggleClasses()*/
 c/*const passarMouse = () => {
     const elemento = document.getElementById('silvio');
     elemento.addEventListener('mouseover', () => {
-        elemento.innerText = 'Passou o mouse';
+    elemento.innerText = 'Passou o mouse';
     })
 }
 passarMouse()*/
@@ -49,17 +49,28 @@ passarMouse()*/
 //6 Exibir uma caixa de diálogo de confirmação ao clicar em um link: Crie uma função de seta que, 
 // ao ser chamada, exiba uma caixa de diálogo de confirmação ao clicar em um link HTML específico.
 
-    const confirmarAcao = () => {
-        const confirmacao = confirm("Tem certeza que deseja prosseguir?")
-        const resposta = (confirmacao) ? alert('ok'):alert('não ok')
+ /*   function confirmarAcao() {
+    const confirmacao = confirm('Tem certeza que deseja prosseguir?');
+    if (confirmacao) {
+        alert('ok');
+    } else {
+        alert('não ok');
     }
+}*/
 
+//Alternar a visibilidade de um elemento HTML ao clicar em outro elemento: Crie uma função de seta que, 
+// ao ser chamada, alterne a visibilidade de um elemento HTML específico ao clicar em outro elemento.
 
-
-
+const alternarVisibilidade = () => {
+        const elemento1 = document.getElementById('silvio');
+        const elemento2 = document.getElementById('davi');
+        elemento2.addEventListener('click', () => {
+        elemento1.style.display = 'none';
+            })
+}
+alternarVisibilidade();
 
 /*
-Alternar a visibilidade de um elemento HTML ao clicar em outro elemento: Crie uma função de seta que, ao ser chamada, alterne a visibilidade de um elemento HTML específico ao clicar em outro elemento.
 Adicionar um novo item a uma lista ao pressionar Enter em um campo de entrada: Crie uma função de seta que, ao ser chamada, adicione um novo item a uma lista HTML quando o usuário pressionar a tecla Enter em um campo de entrada.
 Criar um menu de navegação com efeito de deslize: Crie uma função de seta que, ao ser chamada, crie um menu de navegação com efeito de deslize ao clicar em um botão, utilizando CSS para animações.
 Validar um formulário HTML ao enviar: Crie uma função de seta que, ao ser chamada, valide os campos de um formulário HTML específico ao enviar e exiba mensagens de erro, se necessário.*/
