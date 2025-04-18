@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>QuickSort</title>
+</head>
+
+<body>
+  <button onclick="imprimir()">Executar</button>
+
+
+  <script>
+    function quickSort(vetor) {
+      //Condição de parada
+      if (vetor.length <= 1) {
+        return vetor;
+      }
+      else {
+        var pivotIndex = Math.floor(vetor.length / 2);
+        var pivot = vetor[pivotIndex];
+        var esq = [];
+        var dir = [];
+        for (var i = 0; i < vetor.length; i++) {
+          if(i === pivotIndex){
+            continue;
+          }
+          if(vetor[i] < pivot){
+            esq.push(vetor[i]);
+          } else {
+            dir.push(vetor[i]);
+          }
+        }
+      }
+      //Chamada Recursiva
+      return [...quickSort(esq), pivot, ...quickSort(dir)];
+    }
+
+    function imprimir(){
+      alert(quickSort([33, 87324, 1, 9, 89, 66, 5, 98234329, 41, 12]));
+    }
+  </script>
+</body>
+
+</html>
