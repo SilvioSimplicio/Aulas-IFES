@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potência Interativa</title>
+</head>
+<body>
+    
+    <h1>Potência Interativa</h1>
+    <button onclick="potenciaInterativa()">Calcular</button>
+    <script>
+        function potenciaInterativa(n, p) {
+            
+            var n = parseInt(prompt("Digite a base: "));
+            var p = parseInt(prompt("Digite o expoente: "));
+            var resultado = 1;
+
+            if(p==0){
+                alert('O resultado é 1');
+            } else {
+                for(let i = 1; i <= p; i++) {
+                    resultado = resultado * n;
+                }
+                alert('O resultado de ' + n + ' elevado a ' + p + ' é: ' + resultado);
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

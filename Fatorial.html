@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potência Recursiva</title>
+</head>
+<body>
+    
+    <h1>Fatorial</h1>
+    
+    <!--<button onclick="fatorialInterativo(5)">Executar</button>-->
+    
+    <button onclick="imprimir()">Executar</button>
+
+    <script>
+        
+       /* function fatorialInterativo(n) {
+            let resultado = 1;
+            if(n === 0) {
+                alert('O resultado é 1.');
+            } else {
+                for(let i = 1; i <= n; i++){
+                    resultado = resultado * i;
+            }
+            alert('O resultado de ' + n +'! é ' + resultado);
+        }    
+    }    */
+
+    function fatorialRecursivo(n){
+            
+        if(n === 0) {
+        return 1;
+        }else {
+        return n * fatorialRecursivo(n-1);
+        }
+    }
+
+    function imprimir(){
+                alert('O resultado é: ' + fatorialRecursivo(5));
+            }
+
+    </script>
+</body>
+</html>

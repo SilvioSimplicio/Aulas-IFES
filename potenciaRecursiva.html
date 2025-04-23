@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potência Recursiva</title>
+</head>
+<body>
+    
+    <h1>Potência Recursiva</h1>
+    <button onclick="Executar()">Calcular</button>
+    <script>
+        
+        function potenciaRecursiva(n, p) {
+
+            if(p == 0) {
+                return 1;
+            } else {
+                return n * potenciaRecursiva(n, p-1);
+            }
+        }    
+
+            function imprimir(){
+                alert('O resultado é: ' + potenciaRecursiva(2, 6));
+            }
+                
+
+
+
+    </script>
+</body>
+</html>
