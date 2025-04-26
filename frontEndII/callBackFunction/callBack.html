@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Function</title>
+    <link rel="stylesheet" href="callback.css">
+
+</head>
+<body>
+    
+   <h1>Nova página</h1>
+   <div id="resposta">
+        Ver no F12 ou Ctrl + Shift + i
+   </div>
+
+   <script>
+    let nomes = ['silvio', 'davi'];
+    //nomes.forEach()
+    function alerta(msg) {
+        console.log(msg);
+        msg();
+    }
+
+    function executandoSirene(){
+        console.log('Executando sirene Buuuuuuuuuuuuuuuuuuu!');
+    }
+
+    function executandoSireneSilenciosa(){
+        console.log('Executando sirene');
+    }
+    //alerta(executandoSirene);
+    //alerta(executandoSireneSilenciosa);
+
+    function soma(n1){
+        return function(n2) {
+            return n1+n2;
+        }
+    }
+
+    let s = soma(2);
+    //console.log(s);
+    //let n = s(3);
+    //console.log(n);
+    let n = soma(2) (3);
+    //console.log(n);
+
+
+    function multiplicador(n1){
+        return function(n2){
+            return function(n3){
+                return n1*n2*n3;
+            }
+        }
+    }
+
+    let resposta = multiplicador(2) (3) (2);
+    console.log(resposta);
+
+
+
+
+    //alerta('Oi, bom dia!');
+
+
+
+   </script>
+
+
+   <!-- 
+   <script>
+    let alerta = (msg) => {
+    msg = "alerta() -> " + msg;
+    
+    function criarBomDia(){
+        return 'Bom dia jovens!';
+    }
+    console.log(criarBomDia() + msg);
+}
+
+alerta("Está tudo certo!"); 
+   </script>-->
+
+</body>
+</html>

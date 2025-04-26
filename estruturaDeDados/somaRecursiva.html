@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma vetor</title>
+</head>
+<body style="text-align: center; background-color: aquamarine;">
+    <button onclick="imprimir()">Executar</button>
+  
+<script>
+  vetor = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];//SOMA 127 - Tamanho 10 - Posição 0 a posição 9
+  function somaRecursiva(vetor, tam){
+    //Condição de parada
+    if(tam === 0){
+      return 0;
+    }
+    else {
+      return vetor[tam-1] + somaRecursiva(vetor, tam-1);
+      //vetor[9] + vetor   45 + 10 = 55
+      //vetor[8] + vetor   36
+      //vetor[7] + vetor   28
+      //vetor[6] + vetor   21
+      //...
+      //vetor[0] + 0 = 1 e sobre resolvendo
+    }
+  }
+
+  function imprimir(){
+    alert(somaRecursiva(vetor, 10));
+  }
+</script>
+</body>
+</html>
