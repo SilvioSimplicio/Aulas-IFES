@@ -42,17 +42,15 @@
     padding: 20px 40px;
     background-color: #124865;
     color: #06a2e8;   
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     cursor: pointer;
     margin-bottom: 12px;
 }
 
 .consulta:hover {
-    padding: 20px 40px;
-    background-color: #124865;
-    color: #06a2e8;
     transform: scale(1.1);
     box-shadow: 2px 2px 2px #000;
+    color: #fff;
 }
 
 .campo {
@@ -69,13 +67,6 @@
     outline: none;
     cursor: pointer;
 }
-
-.campo input[type=text]:hover {  
-    border: 4px solid #00A2E8;
-    color: #000;
-    background-color: #99D9EA;
-}
-
 
 .campo input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(0, 0, 0);
