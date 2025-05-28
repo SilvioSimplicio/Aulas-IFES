@@ -15,10 +15,14 @@ body {
   h1, h2 {
     color: #333;
   }
-  
+  h3 {
+    margin: 20px;
+  }
+
   #noticia {
-    background-color: rgb(193, 194, 171);
+    background-color: rgb(245, 248, 180);
     padding: 20px;
+    height: 500px;
     margin-bottom: 20px;
     border-radius: 10px;
   }
@@ -34,3 +38,8 @@ body {
     cursor: pointer;
   }
   
+  #nova-titulo, #nova-conteudo, #adicionar-btn, #remover-id {
+    margin: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+  }

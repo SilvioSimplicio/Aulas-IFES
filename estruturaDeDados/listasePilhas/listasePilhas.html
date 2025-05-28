@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leitor de Notícias</title>
-    <link rel="stylesheet" href="listaseFilas.css">
+    <link rel="stylesheet" href="listasePilhas.css">
 </head>
 <body>
     <main>
@@ -21,13 +21,17 @@
         </div>
     
         <div class="gerenciamento">
+          <div class="adicionar-noticia">
           <h3>Gerenciar Notícias</h3>
           <input type="text" id="nova-titulo" placeholder="Título da nova notícia">
           <input type="text" id="nova-conteudo" placeholder="Conteúdo da nova notícia">
           <button id="adicionar-btn">Adicionar Notícia</button>
+          </div>
     
+          <div class="remover-noticia">
           <input type="number" id="remover-id" placeholder="ID para remover">
           <button id="remover-btn">Remover Notícia</button>
+          </div>
         </div>
       </main>
 
@@ -35,6 +39,6 @@
 
     
 
-    <script src="listaseFilas.js"></script> 
+    <script src="listasePilhas.js"></script> 
 </body>
 </html>
