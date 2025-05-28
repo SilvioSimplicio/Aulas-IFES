@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForEach Pokemons</title>
-</head>
-<body>
-    <div id="lista"></div>
-
-
-    <script>
-        const pokemons = {
+export const pokemons = {
   "count": 1302,
   "next": "https://pokeapi.co/api/v2/pokemon/?offset=151&limit=151",
   "previous": null,
@@ -621,15 +609,3 @@
     }
   ]
 }
-
-const container = document.getElementById('lista')
-
-pokemons.results.forEach((elemento, indice) => {
-    const item = document.createElement('p');
-    item.textContent = `Pokemon: ${elemento.name}`
-    container.appendChild(item)
-})
-
-    </script>
-</body>
-</html>

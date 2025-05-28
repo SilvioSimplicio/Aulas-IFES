@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,=">
+    <title>Pokemons</title>
+</head>
+<body>
+    <div id="lista"></div>
+
+    <!--forEach navega pelos elementos com uma callback function
+    Nã cria elementos, só navega. PERCORRE.
+    NÃO RETORNA ELEMENTO NEM ARAY.
+      forEach ((e,i, array) => {
+    })
+    -->
+    
+    <!--map é igual ao forEach, mas SÓ RETORNA um array
+      map ((e,i, array) => {
+    }) >> [] Ele tem um return.
+     Ex: const descricoes = dados.map( (dado) => {return dado.descricao})
+    -->
+
+    <!--filter é igual ao forEach e ao map, SÓ RETORNA um array CONDICIONAL
+      Só vai pro array o elemento que satisfizer a condição.
+     True retorna todo o elemento condicional.
+     Ex: const descricoes = dados.filter(e => {return e.autor.includes("Silvio")})
+
+     Verifica maiúscula e minúscula. Para sanar, usar "toLowerCase()"
+
+      EX: "Silvio Simplicio".includes("silvio")
+      false
+        "Silvio Simplicio".toLowerCase().includes("silvio")
+      true
+      "Silvio Simplicio".toLowerCase().includes("Silvio")
+      false
+      "Silvio Simplicio".toLowerCase().includes("Silvio".toLowerCase())
+      true
+
+      MAIS DE UMMA CONSULTA:
+     dados.filter(e=> {return e.autor.toLowerCase().includes("silvio".toLowerCase()
+     ) ||
+     e.autor.toLowerCase().includes("ana".toLowerCase())
+     })
+         -->
+
+      <!--find é igual ao forEach, ao map e ao filter, mas RETORNA o primeira elemento.
+      Não retorna o array, mas o elemento que satisfizer, PRIMEIRO, a condição. 
+      UM VALOR.
+      SÓ RETORNA ELEMENTO.
+      EX: dados.find(e => {return e.data == "2025-05-07"})
+     
+    -->
+
+    <script type="module">
+      
+      import {dados} from './consultas.js'
+      import {pokemons} from './pokemons.js'
+
+      console.log(dados);
+      console.log(pokemons);
+
+
+        
+const container = document.getElementById('lista')
+
+pokemons.results.forEach((elemento, indice) => {
+    const item = document.createElement('p');
+    item.textContent = `Pokemon: ${elemento.name}`
+    container.appendChild(item)
+})
+    
+    </script>
+</body>
+</html>
