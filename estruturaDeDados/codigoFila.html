@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila-FIFO</title>
+</head>
+<body style="text-align: center; background-color: aquamarine; padding: 50px; border-radius: 25px;">
+     <input type="text" id="pessoa" />
+  <button onclick="inserir(vetor)">Inserir</button>
+  <button onclick="remover(vetor)">Remover</button>
+  <button onclick="exibir(vetor)">Mostrar Fila</button>
+
+  <ol id="container"></ol>
+
+  <script>
+    var vetor = ['João', 'Maria', 'Carlos', 'Ana'];
+
+    function inserir(vetor){
+      var item = document.getElementById("pessoa").value;
+      vetor.push(item);
+    }
+    //FIFO - First In First Out
+    function remover(vetor){
+      vetor.shift();      
+    }
+
+    function exibir(vetor){
+      var lista = document.createElement('ol');
+      var container = document.getElementById('container');
+      container.innerHTML = '';
+
+      for(var i = 0; i < vetor.length; i++){
+        var item = document.createElement('li');
+        item.innerText = vetor[i];
+        lista.appendChild(item);
+      }
+      container.appendChild(lista);
+    }
+  </script>
+</body>
+</html>

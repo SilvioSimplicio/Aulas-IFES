@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Endereço</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input {
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      text-align: left;
+      color: #333;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Buscar Endereço pelo CEP</h2>
+    <input type="text" id="cep" placeholder="Digite o CEP (ex: 29700010)">
+    <button onclick="buscarEndereco()">Buscar</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script>
+    function buscarEndereco() {
+      const cep = document.getElementById('cep').value;
+
+      fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(response => response.json())
+        .then(dados => {
+          if (dados.erro) {
+            document.getElementById('resultado').innerText = "CEP não encontrado.";
+          } else {
+            document.getElementById('resultado').innerHTML = `
+              <p><strong>Logradouro:</strong> ${dados.logradouro}</p>
+              <p><strong>Bairro:</strong> ${dados.bairro}</p>
+              <p><strong>Cidade:</strong> ${dados.localidade}</p>
+              <p><strong>Estado:</strong> ${dados.uf}</p>
+            `;
+          }
+        })
+        .catch(() => {
+          document.getElementById('resultado').innerText = "Erro ao buscar o CEP.";
+        });
+    }
+  </script>
+</body>
+</html>

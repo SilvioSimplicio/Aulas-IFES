@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Hash - Controle de Veículos</title>
+    <link rel="stylesheet" href="tabelaHash.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Tabela Hash de Veículos-Silvio</h1>
+
+    <h3>Cadastre as placas aqui</h3>
+    <input type="text" id="placa" placeholder="Placa (ex: ABC1234)">
+    <input type="text" id="proprietario" placeholder="Proprietário">
+    <input type="text" id="modelo" placeholder="Modelo do carro">
+    <button onclick="inserir()">Cadastrar</button>
+
+    <h3>Busca</h3>
+    <input type="text" id="placaBusca" placeholder="Placa para buscar">
+    <button onclick="buscar()">Buscar</button>
+
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+
+
+<script src="tabelaHash.js"></script>
+</body>
+</html>
