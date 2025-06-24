@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila Encadeada</title>
+</head>
+<body>
+
+<script>
+ 
+  var pilha = [];
+  var pilha2 = [];
+
+  function empilhar(vetor, elemento) {
+  vetor.push(elemento);
+  alert(vetor);
+}
+
+  function desempilhar(vetor) {
+  return vetor.pop();
+}
+
+  function mostrarUltimo(vetor) {
+  let ultimo = vetor.length - 1;
+  return vetor[ultimo];
+}
+
+  function estaVazia(vetor) {
+  return vetor.length === 0;
+}
+empilhar(pilha, "prato1");
+empilhar(pilha, "prato2");
+empilhar(pilha, "prato3");
+empilhar(pilha, "prato4");
+empilhar(pilha, "prato5");
+empilhar(pilha2, desempilhar(pilha));
+empilhar(pilha2, desempilhar(pilha));
+empilhar(pilha2, desempilhar(pilha));
+empilhar(pilha2, desempilhar(pilha));
+empilhar(pilha2, desempilhar(pilha));
+
+    </script>
+</body>
+</html>
